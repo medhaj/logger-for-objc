@@ -18,7 +18,7 @@ Once imported you can start configuring it and using it.
 
 ##### Set log level
 
-The set log level method helps you configure the log level of the logger. The default log level is the verbose mode. The following is a table describing different log levels supported by the logger:
+The default log level is the verbose mode. The following is a table describing different log levels supported by the logger:
 
  Level            			| Description
 ---------------------------	|----------------------------------------------
@@ -29,6 +29,13 @@ __kMHALogLevelError__      	| Log level of Error
 __kMHALogLevelNone__      	| Silent mode
 
 
+The set log level method helps you configure the log level of the logger
+
+```objective-c
+
+    [[MHALogger defaultLogger] setLevel:kMHALogLevelVerbose];
+	
+```
 
 ##### Use the logger
 
